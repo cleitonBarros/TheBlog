@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <title>The Blog</title>
+
+</head>
+<body>
+    <!--header-->
+    <header id="header">
+        <nav class="container">
+            <img src="../src/images/logo.svg" alt="logo icon">
+    <!--menu-->        
+            <div class="menu">
+                <ul class="grid">
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Home</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Sobre</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Categoria</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Contato</a></li>
+                </ul>
+
+            </div>
+    <!--menu--> 
+            <form action="" class="search">
+                <input type="text" placeholder="Busca">
+                <a href="#">
+                    <img src="../src/images/search.svg" alt="icon search">
+                </a>
+            </form>
+           <!-- <div class="toggle icon-menu">  </div>
+            <div class="toggle icon-close">  </div>-->
+        </nav>
+    </header>
+    <main>
+        <!--Principal-->
+        <section class="section" id="principal">
+            <div class="container grid">
+                <div class="text-right">
+                    <div class="text">
+                        <h1>Veja o guia definitivo para conquistar seus objetivos como DEV em 2022</h1>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique placerat hac. </p>
+                    </div>
+                    <div class="ver-mais">
+                        <label >Ver mais </label>
+                        <a name="arrow" href="https://www.youtube.com/"><img id="arrow" name="arrow" src="../src/images/arrow-right.svg" alt="seta" ></a>
+                    </div>
+                    
+                </div>
+                <div class="imagem">
+                    <img class="featured-img img" src="../src/images/featured-image.png" alt="imagem de codigo" id="featured-img">
+    
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-1"></div>
+
+        <!--Notice-->
+        <section class="section" id="notice">
+            <div class="container">
+                <div class="main-post">
+                    
+                    <div class="text">
+                              <div class="imagem">
+                        <img  class="img"src="../src/images/post-1.png" alt="imagem de um pc">
+                    </div>
+                        
+                        <small> Janeiro 04, 2022</small>
+                        
+                        <h2>Começando no ReactJS em 2022</h2>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. Sed volutpat aenean.</p>
+                    </div>
+                    
+                </div>
+                <div class="side-post">
+              
+                        <div class="text">
+                            <small> Janeiro 04, 2022</small>
+                            <h2>Conheça as principais técnicas para conseguir uma vaga internacional em programação</h2>     
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
+                        </div>
+                        <div class="divider-2"></div>
+                        <div class="text">
+                            <small> Janeiro 04, 2022</small>
+                            <h2>Veja a evolução do Front-end na prática</h2>     
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. </p>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="cards">
+            <div class="container">
+                <div class="cards swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="card  swiper-slide">
+       
+                            <div class="imagem"> 
+                                <img class="img" src="../src/images/post-2.png" alt="" srcset="">
+                            </div>
+                            <div  class="frame-text">
+                                <small> Janeiro 04, 2022</small>
+                                 <h2>10 dicas para conseguir a vaga desejada</h2>     
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. 
+                            </div>
+                        </div>
+                        <div class="card  swiper-slide">
+                            <div class="imagem">
+                                <img  class="img"src="../src/images/post-3.png" alt="" srcset="">
+                            </div>
+                            <div class="frame-text">
+                                <small> Janeiro 04, 2022</small>
+                                 <h2>Deixe seu código mais semântico com essas dicas</h2>     
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. 
+                            </div>
+                        </div>
+                        <div class="card  swiper-slide">
+                            <div class="imagem">
+                                <img  class="img"src="../src/images/post-4.png" alt="" srcset="">
+                            </div>
+                            <div class="frame-text">
+                                <small> Janeiro 04, 2022</small>
+                                 <h2>Use essas dicas nas suas aplicações mobile</h2>     
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. 
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="section">
+        <div class="container ">
+            <div class="logo">
+                <img src="../src/images/logo.svg" alt="">
+            </div>
+            <div class="text">
+                <a href="https://github.com/cleitonBarros" target="_blank" >Kim Every -  Todos os direitos reservado</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--swiper-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> 
+   <script src="../src/script/main.js"></script> 
+</body>
+</html>
