@@ -27,6 +27,7 @@ font-family: 'Roboto', sans-serif;
 
 
  /*base*/
+ 
  html{
      scroll-behavior: smooth;
  }
@@ -170,8 +171,9 @@ nav ul li a.active::after{
     display: flex;
     flex-direction: column;
     justify-content:center;
-    max-width: 35.625rem;
-    height: 19.615rem;
+    max-width: 34rem;
+    height:250px;
+  
 
 }
 #principal .container .text-right h1{
@@ -215,9 +217,11 @@ nav ul li a.active::after{
 .ver-mais label:hover+a{
     transform: translateX(20px)
 }
-#principal .container .image{
+#principal .container .imagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 35.625rem;
-    height: 21.25rem;
 
     
 }
@@ -231,7 +235,6 @@ nav ul li a.active::after{
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -317,13 +320,14 @@ nav ul li a.active::after{
 
 
 #cards .container .cards{ 
-    max-width: 35rem;
+    max-width: 600px;
    
 } 
  #cards .container .card{
     
      max-width: 35rem;
 } 
+
 .card .frame-text{
     display: flex;
     flex-direction: column;
@@ -355,9 +359,10 @@ nav ul li a.active::after{
 /**swiper*/
 .swiper-slide{
     height:auto;
-    padding: 4rem 1rem;
+    padding: 1rem 1rem 3rem;
 }
 .swiper-pagination-bullet{
+    
     width:0.75rem;
     height:0.75rem;
 }
@@ -433,22 +438,22 @@ footer a:hover{
     #principal .container .text-right{
         justify-content:flex-start;
         max-width: 32.5rem;
-        height: 19.5rem;
+        height: 21.875rem;
     }
-    .container .text-right h1{
-        font-size: 2.25rem;
-        line-height: 4rem;
+    #principal .container .text-right h1{
+        font-size: 2rem  !important;
+        line-height: 3rem  !important;
     }
     #principal .container .text-right p{
-        font-size: 1.2rem;
+        font-size: 1.2rem  !important;
+        line-height:1.5rem  !important;
     }
   
    /*notice*/
    #notice .container{
-    
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
 
     }
     .main-post .text h2{
@@ -462,10 +467,8 @@ footer a:hover{
     flex-direction:column;
     justify-content: flex-start;
     gap: 1rem;
-}
-#notice .container .side-post .text{
-  
-}
+    }
+
 
     .side-post .divider-2{
     display: block;
@@ -480,8 +483,99 @@ footer a:hover{
     font-size:1rem;
     line-height:1.5rem;
 }
+
+
+
+}
+@media (min-width: 900px){
+    header nav{
+        justify-content: space-between;
+    }
+    #principal .container{
+
+        flex-direction: row;  
+        gap:0.5rem;
+    }
+    #principal .container .text-right{
+        justify-content:flex-start;
+        min-width: 400px;
+        
+         
+    }
+    #principal .container .text-right .text{
+      
+     justify-content: flex-start;
+     height:auto
+         
+    }
+    #principal .container .text-right h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    #principal .container .text-right p{
+        font-size: 1rem;
+        line-height:1.2rem;
+    }
+
+    #principal .container .text-right p{
+        font-size: 1.2rem;
+    }
+    #principal .container .imagem{
+        min-width: 400px;
+    }
+      /*notice*/
+   #notice .container{
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5rem;
+
+    }
+    .main-post .text h2{
+    line-height:2.25rem;
+    }
+
+    #notice .container .side-post{
+    display: flex;
+    width: 30rem;
+    width:24rem;
+    flex-direction:column;
+    justify-content: flex-start;
+    gap: 1rem;
+    }
+
+
+    .side-post .divider-2{
+    display: block;
+        
+}
+#cards .container .cards{ 
+    max-width: 1200px;
+   
+} 
+       
+  
 }
 
-@media (min-width: 600px){
+
+@media (min-width: 610px){
+  
+      
+    #notice .main-post{
+        height: 35rem
+    }
+    #notice .container .side-post{
+        flex-direction: column;
+        width: 35rem;       
+    }
+
+    .side-post .text h2{
+    font-size:1.5rem;
+    line-height:2.25rem;
+    }
+
+    .side-post1 .text p , small{
+    font-size:1rem;
+    line-height:1.5rem;
+    }
   
 }
