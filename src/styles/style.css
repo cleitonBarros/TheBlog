@@ -51,7 +51,7 @@ font-family: 'Roboto', sans-serif;
     justify-content:center;
     align-items:center;
     width:100%;
-    height:6.25rem;
+    height:8.25rem;
     background-color: var(--purple-bg);
 
 }
@@ -64,9 +64,7 @@ font-family: 'Roboto', sans-serif;
     display: grid;
     gap: 2rem;
 }
-.section{
-    
-}
+
 nav{
     height:4.5rem;
     display:flex;
@@ -109,14 +107,13 @@ nav ul li {
 
 }
 nav .menu{
-    opacity: 0;
-    visibility: hidden;
-    top: -20rem;
-    transition: 0.3s;
+position:absolute;
+top: 100px
 
 }
 nav .menu ul{
-    display: none;
+    display: flex;
+ 
 }
 nav ul li a {
     font-family: 'Roboto',sans-serif;
@@ -151,8 +148,8 @@ nav ul li a.active::after{
    
 
 }
-/*mostrar menu*/
-/*toggles*/
+
+
 /*principal*/
 #principal{
     overflow: hidden;
@@ -491,6 +488,13 @@ footer a:hover{
     header nav{
         justify-content: space-between;
     }
+    nav .menu{
+        position:relative;
+        top: 0px;
+       
+    }
+ 
+      
     #principal .container{
 
         flex-direction: row;  
