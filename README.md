@@ -1,5 +1,4 @@
 # TheBlog
-Projeto desenvolvido afim de executar desafio RockertSeat
 <h1 align="center">
   <img  src="../src/images/logo.svg" width="420px" />
 </h1>
