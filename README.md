@@ -1,6 +1,6 @@
 # TheBlog
 <h1 align="center">
-  <img  src="./src/images/logo.png" width="320px" />
+  <img  src="./src/images/logo.png" width="300px" />
 </h1>
 
 ## 🚀 Tecnologias
